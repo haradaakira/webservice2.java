@@ -1,12 +1,31 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
+    <link href="style.css" rel="stylesheet"/>
 </head>
 <body>
-    <form>
-        <h1>AAAAAAAAAA</h1>
-    </form>
+    <div class="recoverform">
+        <form th:action="@{/recovercode}">
+            <div class="recovercontent">
+                <h2>Recuperar a senha</h2>
+                <label for="recovercpf">CPF:</label>
+                <input type="text" id="recovercpf" placeholder="CPF"><br>
+
+                <label for="newpassword">Senha Nova:</label>
+                <input type="password" id="newpassword" placeholder="Senha Nova"><br>
+
+                <label for="recoverpassword">Repita a Senha:</label>
+                <input type="password" id="recoverpassword" placeholder="Repita a Senha"><br>
+
+                <label for="recoveremail">E-mail:</label>
+                <input type="text" id="recoveremail" placeholder="E-mail"><br><br>
+
+                <button type="submit">Recuperar</button>
+            </div>
+        </form><br>
+        <a href="/login"><button>Voltar</button></a>
+    </div>
 </body>
 </html>

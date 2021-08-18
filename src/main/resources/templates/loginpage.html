@@ -1,18 +1,26 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
+    <link href="style.css" rel="stylesheet"/>
 </head>
 <body>
-    <form>
-        <label for="logincpf">CPF</label>
-        <input type="text" id="logincpf" placeholder="CPF">
-        <label for="loginpassword">CPF</label>
-        <input type="password" id="loginpassword" placeholder="Password">
-        <button type="submit">Login</button>
-    </form>
-    <a href="/recover"><button>Recuperar Senha</button></a>
-    <a href="/register"><button>Cadastrar</button></a>
+    <div class="loginform">
+        <form>
+            <div class="logincontent">
+                <h2>Login</h2>
+                <label for="logincpf">CPF:</label>
+                <input type="text" id="logincpf" placeholder="CPF"><br>
+
+                <label for="loginpassword">Senha:</label>
+                <input type="password" id="loginpassword" placeholder="Senha"><br><br>
+
+                <button type="submit">Login</button>
+            </div>
+        </form><br>
+        <a href="/recover"><button>Recuperar Senha</button></a>
+        <a href="/register"><button>Cadastrar</button></a>
+    </div>
 </body>
 </html>
