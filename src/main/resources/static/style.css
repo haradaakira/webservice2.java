@@ -24,7 +24,7 @@ label {
 }
 
 .loginform {
-    background-color: rgb(190, 214, 221);
+    background-color: rgb(225, 225, 225);
     padding: 50px;
     margin: auto;
     width: 40%;
@@ -32,12 +32,12 @@ label {
 }
 
 .logincontent {
-    background-color: rgb(188, 226, 178);
+    background-color: rgb(160, 160, 160);
     padding: 30px;
 }
 
 .recoverform {
-    background-color: rgb(190, 214, 221);
+    background-color: rgb(225, 225, 225);
     padding: 50px;
     margin: auto;
     width: 40%;
@@ -45,6 +45,6 @@ label {
 }
 
 .recovercontent {
-    background-color: rgb(188, 226, 178);
+    background-color: rgb(160, 160, 160);
     padding: 30px;
 }
