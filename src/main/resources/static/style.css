@@ -48,3 +48,29 @@ label {
     background-color: rgb(160, 160, 160);
     padding: 30px;
 }
+
+.registerform {
+    background-color: rgb(225, 225, 225);
+    padding: 50px;
+    margin: auto;
+    width: 40%;
+    text-align: center;
+}
+
+.registercontent {
+    background-color: rgb(160, 160, 160);
+    padding: 30px;
+}
+
+.mainmenu {
+    background-color: rgb(225, 225, 225);
+    padding: 50px;
+    margin: auto;
+    width: 40%;
+    text-align: center;
+}
+
+.menucontent {
+    background-color: rgb(160, 160, 160);
+    padding: 30px;
+}

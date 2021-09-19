@@ -22,13 +22,15 @@ public class PessoaFisica {
     private String telefone;
     @Nullable
     private String rendamensal;
+    @Nullable
+    private String sessionowner;
 
     @OneToOne(cascade = CascadeType.ALL)
-    @JoinColumn(name = "endereco_id", referencedColumnName = "id")
+    @JoinColumn(name = "endereco_id", referencedColumnName = "id") @Nullable
     private Endereco endereco;
 
     @OneToOne(cascade = CascadeType.ALL)
-    @JoinColumn(name = "financiamento_id", referencedColumnName = "id")
+    @JoinColumn(name = "financiamento_id", referencedColumnName = "id") @Nullable
     private Financiamento financiamento;
 
 }

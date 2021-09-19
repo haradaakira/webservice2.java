@@ -1,12 +1,58 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>Cadastrar Financeira</title>
+    <link href="style.css" rel="stylesheet"/>
 </head>
 <body>
-    <form>
-        <h1>BBBBBBBBB</h1>
-    </form>
+<div class="registerform">
+    <form th:action="@{/recovercode}">
+        <div class="registercontent">
+            <h2>Cadastrar Financeira</h2>
+            <label for="cnpj">CNPJ:</label>
+            <input type="text" id="cnpj" placeholder="CNPJ"><br>
+
+            <label for="numerobanco">Número do Banco:</label>
+            <input type="text" id="numerobanco" placeholder="Número"><br>
+
+            <label for="numeroagencia">Número da Agência:</label>
+            <input type="text" id="numeroagencia" placeholder="Agência"><br>
+
+            <label for="numeroconta">Número da Conta:</label>
+            <input type="text" id="numeroconta" placeholder="Conta"><br>
+
+            <label for="telefone">Telefone:</label>
+            <input type="text" id="telefone" placeholder="Telefone"><br>
+
+            <label for="email">E-mail:</label>
+            <input type="text" id="email" placeholder="E-mail"><br><br><hr><br>
+
+            <label for="cep">CEP:</label>
+            <input type="text" id="cep" placeholder="CEP"><br>
+
+            <label for="street">Logradouro:</label>
+            <input type="text" id="street" placeholder="Logradouro"><br>
+
+            <label for="district">Bairro:</label>
+            <input type="text" id="district" placeholder="Bairro"><br>
+
+            <label for="city">Cidade:</label>
+            <input type="text" id="city" placeholder="Cidade"><br>
+
+            <label for="state">Estado:</label>
+            <input type="text" id="state" placeholder="Estado"><br><br><hr><br>
+
+            <label for="senha">Cadastrar a senha:</label>
+            <input type="password" id="senha" placeholder="Senha"><br>
+
+            <label for="recoversenha">Repita a Senha:</label>
+            <input type="password" id="recoversenha" placeholder="Repita a Senha"><br><br>
+
+            <button type="submit">Cadastrar</button>
+        </div>
+    </form><br>
+    <a href="/login"><button>Voltar</button></a>
+</div>
 </body>
 </html>
