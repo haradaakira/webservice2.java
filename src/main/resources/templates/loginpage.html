@@ -7,14 +7,14 @@
 </head>
 <body>
     <div class="loginform">
-        <form>
+        <form method="POST" th:object="${loginobject}" th:action="@{login}">
             <div class="logincontent">
                 <h2>Login</h2>
-                <label for="logincpf">CNPJ:</label>
-                <input type="text" id="logincpf" placeholder="CNPJ"><br>
+                <label for="cnpj">CNPJ:</label>
+                <input type="text" id="cnpj" th:field="*{cnpj}" placeholder="CNPJ" required><br>
 
-                <label for="loginpassword">Senha:</label>
-                <input type="password" id="loginpassword" placeholder="Senha"><br><br>
+                <label for="senha">Senha:</label>
+                <input type="password" id="senha" th:field="*{senha}" placeholder="Senha" required><br><br>
 
                 <button type="submit">Login</button>
             </div>
@@ -22,7 +22,7 @@
         <a href="/recover"><button>Recuperar Senha</button></a>
         <a href="/register"><button>Cadastrar</button></a>
 
-        <a href="/menu"><button>MENUPRINCIPAL</button></a>
+<!--        <a href="/menu"><button>MENUPRINCIPAL</button></a>-->
     </div>
 </body>
 </html>
