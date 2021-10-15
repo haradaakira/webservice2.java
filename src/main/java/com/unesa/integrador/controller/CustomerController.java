@@ -26,13 +26,13 @@ public class CustomerController {
         return "customerregisterpage";
     }
 
-    @PostMapping
+    @PostMapping("/addcustomer")
     public String submitCustomer(ModelMap model, @ModelAttribute("registercustomerobject")PessoaFisica pessoaFisica, BindingResult result) {
         pessoaFisica.setId(pessoaFisicaRepository.getMaxId() + 1);
         pessoaFisica.setSessionowner(sessionRepository.getDbSessionId());
         System.out.println(pessoaFisica.toString());
         pessoaFisicaRepository.save(pessoaFisica);
-        return "redirect:/menu/";
+        return "customermenupage";
     }
 
     @GetMapping("/loanpage")
