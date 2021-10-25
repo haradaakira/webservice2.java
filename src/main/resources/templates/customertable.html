@@ -8,6 +8,27 @@
 <body>
 <div class="mainmenu">
     <h1>CONSULTAR TABELA</h1>
+    <table>
+        <thead>
+            <tr th:if="${customer.size()!=0}">
+                <th>CPF</th>
+                <th>Nome</th>
+                <th>E-mail</th>
+                <th>Renda Mensal</th>
+                <th>Telefone</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr th:each="customer,iter : ${customer}">
+                <td th:text="${customer.cpf}"></td>
+                <td th:text="${customer.nome}"></td>
+                <td th:text="${customer.email}"></td>
+                <td th:text="${customer.rendamensal}"></td>
+                <td th:text="${customer.telefone}"></td>
+            </tr>
+        </tbody>
+    </table><br>
+    <a href="/menu"><button>Voltar</button></a>
 </div>
 </body>
 </html>
