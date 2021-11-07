@@ -12,6 +12,7 @@
 	<artifactId>integrador</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>curitibafincar</name>
+	<packaging>war</packaging>
 	<description>Projeto Integrador Java.</description>
 	<properties>
 		<java.version>11</java.version>
